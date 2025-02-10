@@ -1,91 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F8F0DC;
-    margin: 0;
-    padding: 0;
+body{
+    text-align: center;
+    background-color: #ffffff;
 }
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 
-.container {
-    width: 50%;
-    margin: 50px auto;
-    background-color: #F7F3E1;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-h2 {
-    color: #556B2F;
-    font-size: 24px;
+th, td{
+    border: 1px solid #ddd;
+ font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
 }
-
-p {
-    color: #444;
-    font-size: 14px;
+th{
+    background-color:#e8e8e8 ;
 }
-
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #ccc;
-    margin: 10px 0;
-}
-
-.instruction {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-label {
-    font-weight: bold;
-    margin-top: 10px;
-    display: block;
-    color: #555;
-}
-
-.required {
-    color: red;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.phone-group {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.phone-group input {
-    width: 45%;
-}
-
-.address-group {
-    display: flex;
-    gap: 5px;
-}
-
-.address-group input {
-    width: 48%;
-}
-
-button {
-    background-color: #556B2F;
+.Publicswim{ background-color: #009bcc; color: white;}
+.laneswim{ background-color:#96c21f; color: white}
+.aquacise{background-color: #e65686; color: white;}
+.aquacisejog{background-color: #d9006b; color: white;}
+.education{
+    background-color: #5fd2ca;
     color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-size: 16px;
 }
-
-button:hover {
-    background-color: #6B8E23;
+.kids-swim{
+    background-color: #ed6b04;
+    color: white;
 }
