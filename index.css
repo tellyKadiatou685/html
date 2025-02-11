@@ -1,32 +1,73 @@
 body{
-    text-align: center;
-    background-color: #ffffff;
+    text-align: center; /* Centre tout le contenu du corps de la page */
+    background-color: #ffffff; /* Définit un fond blanc pour la page */
 }
-table{
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 
+table{
+    width: 80%; /* Définit la largeur du tableau à 80% de la page */
+    margin: 20px auto; /* Centre le tableau horizontalement avec une marge de 20px en haut et en bas */
+    border-collapse: collapse; /* Supprime les espaces entre les bordures des cellules */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Ajoute une ombre douce, ici elle est transparente */
 }
+
+/* Ajout d'un conteneur pour permettre le défilement sur mobile */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal si l'écran est trop petit */
+}
+
 th, td{
-    border: 1px solid #ddd;
- font-size: 16px;
-  font-weight: bold;
-  padding: 15px;
+    border: 1px solid #ddd; /* Ajoute une bordure fine et grise autour des cellules */
+    font-size: 16px; /* Définit la taille du texte dans les cellules */
+    font-weight: bold; /* Rend le texte en gras */
+    padding: 15px; /* Ajoute un espace intérieur pour rendre le texte plus lisible */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne pour éviter un tableau trop grand */
 }
+
 th{
-    background-color:#e8e8e8 ;
+    background-color:#e8e8e8; /* Change la couleur de fond des en-têtes de colonnes */
 }
-.Publicswim{ background-color: #009bcc; color: white;}
-.laneswim{ background-color:#96c21f; color: white}
-.aquacise{background-color: #e65686; color: white;}
-.aquacisejog{background-color: #d9006b; color: white;}
+
+/* Style pour les différentes activités */
+
+.Publicswim{ 
+    background-color: #009bcc; /* Fond bleu clair */
+    color: white; /* Texte en blanc */
+}
+
+.laneswim{ 
+    background-color:#96c21f; /* Fond vert clair */
+    color: white; /* Texte en blanc */
+}
+
+.aquacise{
+    background-color: #e65686; /* Fond rose foncé */
+    color: white; /* Texte en blanc */
+}
+
+.aquacisejog{
+    background-color: #d9006b; /* Fond rose plus foncé */
+    color: white; /* Texte en blanc */
+}
+
 .education{
-    background-color: #5fd2ca;
-    color: white;
+    background-color: #5fd2ca; /* Fond turquoise */
+    color: white; /* Texte en blanc */
 }
+
 .kids-swim{
-    background-color: #ed6b04;
-    color: white;
+    background-color: #ed6b04; /* Fond orange */
+    color: white; /* Texte en blanc */
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%; /* Le tableau prend toute la largeur */
+    }
+
+    th, td {
+        font-size: 14px; /* Réduit la taille de la police pour mieux s'adapter */
+        padding: 10px; /* Réduit l'espacement des cellules */
+    }
 }
